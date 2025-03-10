@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container img{
-        height: 200px;
-        width: 300px;
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container img {
+            height: 300px;
+            width: 500px;
+            padding: 5px;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        #container img:hover {
+            transform: scale(1.1);
+            /* Increases size by 10% */
+        }
+
+        #container div {
+            padding: 5px;
+            margin: 5px;
+
         }
     </style>
 </head>
+
 <body>
-    <h1>Infintine Scroll</h1>
+    <h1 style="text-align: center;">Infintine Scroll</h1>
     <div id="container">
 
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
